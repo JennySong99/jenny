@@ -108,6 +108,7 @@ a:link:active, a:visited:active {
 	width:400px;
 	box-shadow: 0 0 15px 0 rgb(195, 189, 189);
 }
+
 img {
 	-webkit-transition: -webkit-transform .8s ease-in-out;
     transition:transform .8s ease-in-out;
@@ -127,6 +128,7 @@ img {
 	align-items: center;
 
 }
+
 #buttons #b1 {
 	width: 110px;
 	height:110px;
@@ -149,7 +151,6 @@ img {
 	margin-left: 5px;
 	margin-right: 5px;
 	transition: color 0.5s, font-weight 0.3s;
-	display:none;
 }
 
 .active {
@@ -163,6 +164,7 @@ img {
 
 
 #greet {
+	display:flex;
 	color: #F2C3BD;
 	font-family: Avenir;
 	font-weight: bold;
@@ -176,15 +178,16 @@ img {
 }
 
 #greet {
+	position:relative;
+	display:flex;
 	animation-name: upDown;
 	animation-duration: 0.5s;
    animation-timing-function: ease-in;
    animation-delay: 0s;
    animation-iteration-count: 2;
-   animation-direction: reverse;
-
 }
 #name {
+	display:flex;
 	color: #F2978A;
 	font-family: Avenir;
 	font-weight: bold;
@@ -193,16 +196,33 @@ img {
 	margin-right: 5px;
 	transition: color 0.5s, font-weight 0.3s;
 		text-shadow: 0 0 3px rgb(195, 189, 189);
+}
 
+#cat {
+	position:relative;
+	margin-top: 70px;
+	margin-left: 280px;
+	animation-name: mymove;
+	animation-duration: 5s;
+   animation-timing-function: ease-in-out;
+   animation-delay: 0s;
+   animation-iteration-count: 20;
 }
 
 .buttons:hover {
 	box-shadow: 0 0 8px 0 rgb(195, 189, 189);
 }
 
+@keyframes mymove {
+    0% {left: 0px;}
+    50% {left: -400px;}
+    100% {left: 0px;}
+}
 
-@keyframes upDown {
-   0% { top: 500px; }
-   50% { top: 0px; }
-   100% { top: 500px; }
+@keyframes updown {
+    0% {top: 0px;}
+    25% {top: 20px;}
+    50% {top: 0px;}
+    75% {top: -20px;}
+    100% {top: 0px;}
 }
