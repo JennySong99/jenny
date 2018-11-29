@@ -1,0 +1,165 @@
+/*** Body ***/
+
+html, body {
+    font-family: Avenir;
+    background: #FAF1F0;
+    padding-left: 60px;
+    padding-right:60px;
+    padding-top:10px;
+}
+
+/*** header ***/
+a:link, a:visited { 
+    color: #F2C3BD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link, a:hover {
+	 color: #F2978A;
+	 transition: color 0.5s, font-weight 0.3s;
+}
+
+a:link:active, a:visited:active { 
+    color: #F2C3BD;
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+	width: 100%;
+}
+
+#header-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-around;
+	width: 700px;
+}
+
+.navbar-item {
+	color: #F2C3BD;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.5s, font-weight 0.3s;
+}
+
+.homepage {
+	color: #F2C3BD;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.5s, font-weight 0.3s;
+}
+/*** end header ***/
+
+#content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 30px;
+}
+
+#title{
+	color: #F2978A;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 50px;
+	transition: color 0.5s, font-weight 0.3s;
+	padding-top: 40px;
+	padding-bottom:20px;
+		text-shadow: 0 0 3px rgb(195, 189, 189);
+
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.pic, .regular, .hover, .hover-image{
+	width:300px;
+	height:260px;
+	padding-bottom:20px;
+}
+
+#a, #b, #c{ 
+	width:100%;
+	height:100%;
+	box-shadow: 0 0 8px 0 rgb(195, 189, 189);
+}
+
+
+.textbox {
+	display:block;
+	padding-top: 5px;
+	background-color: #FDFDFD;
+	width:300px;
+	height:35px;
+	box-sizing: content-box;
+	color: #F2978A;
+	font-family: Avenir;
+	font-size: 20px;
+	text-align: center;
+	box-shadow: 0 0 8px 0 rgb(195, 189, 189);
+}
+
+
+.regular {
+	z-index: 3;
+}
+
+.hover-image {
+	position: relative;
+	margin-top: -280px;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+.texts {
+ 	text-align: center;
+ 	visibility: hidden;
+ 	margin-top: -230px;
+ 	font-size: 20px;
+ 	opacity: 1;
+ 	color: #F2978A;
+	font-family: Avenir;
+ }
+
+ .pic:hover {
+ 	cursor: pointer;
+ }
+
+.pic:hover .regular {
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.pic:hover .texts {
+	visibility: visible;
+	transition: 0.5s;
+}
+
+
+
+

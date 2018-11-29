@@ -1,0 +1,154 @@
+/*** Body ***/
+
+html, body {
+    font-family: Avenir;
+    background: #FAF1F0;
+    padding-left: 60px;
+    padding-right:60px;
+    padding-top:10px;
+}
+
+/*** header ***/
+a:link, a:visited { 
+    color: #F2C3BD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link, a:hover {
+	 color: #F2978A;
+	 transition: color 0.5s, font-weight 0.3s;
+}
+
+a:link:active, a:visited:active { 
+    color: #F2C3BD;
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+	width: 100%;
+}
+
+#header-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-around;
+	width: 700px;
+}
+
+.navbar-item {
+	color: #F2C3BD;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.5s, font-weight 0.3s;
+}
+
+.homepage {
+	color: #F2C3BD;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.5s, font-weight 0.3s;
+}
+/*** end header ***/
+
+.content {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+}
+
+#left {
+	display:flex;
+	flex-direction: column;
+	height: 75px;
+	width: 100%;
+}
+
+#right {
+	display:flex;
+	width: 430px;
+	height:500px;
+	padding-right: 50px; 
+	animation-name: upDown;
+}
+
+#pic {
+	width: 100%;
+	height:100%;
+	border-radius: 50px 50px 50px 50px;
+	display:inline-block;
+	overflow: hidden;
+	position:relative;
+}
+
+#pic {
+   	box-shadow: 0 0 15px 0 rgb(195, 189, 189);
+
+}
+
+
+#title {
+	color: #F2978A;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 50px;
+	margin-top: -220px;
+	/*margin-right: 5px;*/*/
+	transition: color 0.5s, font-weight 0.3s;
+	padding-top: 0px;
+	padding-bottom: 40px;
+		text-shadow: 0 0 3px rgb(195, 189, 189);
+
+}
+
+#first, #first2, #second, #third, #fourth {
+	display:flex;
+	color: #F2C3BD;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.5s, font-weight 0.3s;
+	padding-bottom:30px;
+	padding-top:30px;
+}
+
+#second, #first {
+	color: #F2978A;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#second {
+	padding-top:20px;
+}
+
+@keyframes upDown {
+   0% { top: 100px; }
+   50% { top: 0px; }
+   100% { top: 100px; }
+}
+
+

@@ -1,0 +1,179 @@
+ /*** Body ***/
+
+html, body {
+    font-family: Avenir;
+    background: #FAF1F0;
+    padding-left: 60px;
+    padding-right:60px;
+    padding-top:10px;
+   	text-shadow: 0 1px 0 #fff;
+}
+
+/*** header ***/
+a:link, a:visited { 
+    color: #F2C3BD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link, a:hover {
+	 color: #F2978A;
+	 transition: color 0.5s, font-weight 0.3s;
+}
+
+a:link:active, a:visited:active { 
+    color: #F2C3BD;
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+	width: 100%;
+}
+
+#header-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-around;
+	width: 700px;
+}
+
+.navbar-item {
+	color: #F2C3BD;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.5s, font-weight 0.3s;
+}
+
+.homepage {
+	color: #F2C3BD;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.5s, font-weight 0.3s;
+}
+/*** end header ***/
+
+#title {
+	color: #F2978A;
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 50px;
+	transition: color 0.5s, font-weight 0.3s;
+	padding-top: 40px;
+	padding-bottom:40px;
+		text-shadow: 0 0 3px rgb(195, 189, 189);
+
+}
+
+#pictures {
+	padding-top: 0px;
+}
+
+.item {
+	height: 200px;
+	width: 300px;
+	padding-right:40px; 
+}
+
+.item {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+
+
+.item:hover {
+ 	transform: scale(1.1);
+}
+
+img {
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0 0 8px 0 rgb(195, 189, 189);
+ 	transition: 0.6s ease;
+}
+
+#carousel-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	background-color: grey;
+	height: 600px;
+	width: 900px;
+	overflow: hidden;
+
+}
+
+#carousel-strip {
+	transition: 0.4s;
+	position: absolute;
+	left: 0;
+}
+
+.carousel-section {
+	position: relative;
+	height: 600px;
+	width: 900px;
+}
+
+.carousel-section img {
+	width: 900px;
+}
+
+#left, #right {
+	position: absolute;
+	transform: translateY(-50%);
+	cursor: pointer;
+	font-size: 48px;
+	color: white;
+}
+
+#left {
+	left:100px;
+	top:51%;
+}
+
+#right {
+	top:50%;
+	right: 100px;
+}
+
+#close {
+	cursor: pointer;
+	color: white;
+	font: 36px/100% arial, sans-serif;
+  	position: absolute;
+	right: 20px;
+	text-decoration: none;
+	top: 20px;
+}
+
+#overlay {
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
